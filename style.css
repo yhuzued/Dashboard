@@ -10,17 +10,60 @@ html body {
   display: flex;
 }
 
-.sidebar {
-  width: 220px;
-  min-height: 100vh;
-  background-color: aliceblue;
+/* body */
+
+.m-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
+.card-heading {
+    background-color: whitesmoke;
+    border-left: 8px solid #1e3a8a;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 84vw;
+    min-height: 10rem;
+}
+
+.ikon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.main-title, .heading-announc, .head-trend {
+  font-weight: bold;
+}
+
+.main-title {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.your-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1 / span 2;
+}
+
+.card-an-title {
+  font-weight: bold;
+}
+
+.announcment, .trending{
+  border: 1px solid black;
+  max-width: 24vw;
+}
 
 /* Header */
 .header {
   position: sticky;
-  top: 0
+  top: 0;
+  background-color: #dbeafe;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 /* Searchbar */
@@ -31,9 +74,13 @@ html body {
 }
 
 .leftbar input{
-  border: 1px solid blue;
-  width: 40vw;
+  border: 1px solid #bfdbfe;
+  width: 35vw;
+  height: 20px;
   outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding-left: 1rem;
 }
 
 .searchbar {
@@ -43,7 +90,6 @@ html body {
   flex-direction: row;
   width: calc(100vw - 210px);
   justify-content: space-between;
-  background-color: whitesmoke;
 }
 
 .leftbar {
@@ -72,12 +118,10 @@ html body {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 12px;
-  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   width: calc(100vw - 210px);
   justify-content: space-between;
-  box-shadow: 0 4px 2px -2px gray;
 }
 
 .profile-left {
@@ -99,13 +143,13 @@ html body {
   box-shadow: none;
   background-color: rgb(145, 205, 245);
   border-radius: 20px;
-  border: 1px solid #005eaa;
+  border: 1px solid #93c5fd;
   color: black;
   padding-bottom: 5px;
 }
 
 .myButton:hover {
-	background-color:rgb(24, 109, 184);
+	background-color:#60a5fa;
 }
 
 .myButton:active {
@@ -120,6 +164,12 @@ html body {
 
 
 /* Sidebar */
+
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background-color: #bfdbfe;
+}
 
 .menu {
   margin-top: 0;
@@ -141,7 +191,7 @@ html body {
 }
 
 .sidebar ul li {
-  list-style: none;
+  list-style: none;  
 }
 
 i {
@@ -150,10 +200,10 @@ i {
 
 .dashboard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 2rem;
   padding-bottom: 36px;
-  font-size: 30px;
+  padding-right: 2rem;
+  font-size: 22px;
 }
 
 .communities {
