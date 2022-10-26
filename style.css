@@ -1,0 +1,163 @@
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* container */
+
+.main-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0
+}
+
+/* Searchbar */
+.profile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 90px;
+}
+
+.leftbar input{
+  border: 1px solid blue;
+  width: 40vw;
+  outline: none;
+}
+
+.searchbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: calc(100vw - 210px);
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.leftbar {
+  display: flex;
+  align-items: center;
+}
+
+.rightbar {
+  display: flex;
+  align-items: center;
+}
+
+.rightbar > .item {
+  margin: 12px;
+}
+
+/* Profilebar */
+
+.main-profile {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 90px;
+}
+
+.profilebar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 12px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  width: calc(100vw - 210px);
+  justify-content: space-between;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.profile-left {
+  display: flex;
+}
+
+.profile-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-name{
+  padding-left: 1rem;
+}
+
+.myButton {
+  width: 100px;
+  box-shadow: none;
+  background-color: rgb(145, 205, 245);
+  border-radius: 20px;
+  border: 1px solid #005eaa;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.myButton:hover {
+	background-color:rgb(24, 109, 184);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.profile-name a, .rightbar a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Sidebar */
+
+.menu {
+  margin-top: 0;
+  margin-left: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar ul{
+  padding-left: 0.8rem;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+i {
+  padding-right: 12px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 36px;
+  font-size: 30px;
+}
+
+.communities {
+  padding-bottom: 36px;
+}
+
+
